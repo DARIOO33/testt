@@ -1,0 +1,19 @@
+.blog-content{
+    height: 100vh;
+   
+}
+.blogc{
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.imageb{
+    width: 55%;
+    margin: 2rem auto; 
+}
+.imageb img{
+    border-radius: 1rem;
+    width: 80%;
+    margin: auto;
+
+}

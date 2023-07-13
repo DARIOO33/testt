@@ -1,0 +1,14 @@
+.blogs{
+    width: 65%;
+    height: auto;
+    margin: auto;
+    /* background-color: yellow; */
+}
+
+.card-container{
+    display: grid;
+    gap: 1rem;
+    width: 95%;
+    margin: auto;
+    grid-template-columns: repeat(2,2fr);
+}

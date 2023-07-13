@@ -1,0 +1,12 @@
+header{
+    width: 100%;
+}
+header .title{
+    
+    cursor: pointer;
+}
+.pc{
+    margin: auto;
+    max-width: 85rem;
+    
+}
