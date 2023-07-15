@@ -7,7 +7,7 @@ export default function Content ({arr}) {
         <div>
             <div className="content">
                 <Dash  />
-                <Blogs ppp='6' blogs = {arr}/>
+                <Blogs ppp='6' blogs = {{arr}}/>
             </div>
         </div>
     )
