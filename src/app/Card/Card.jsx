@@ -5,7 +5,7 @@ import './card.css'
 export default function Card({title,details,desc,image,id}) {
     // console.log({id});
     const link = 'blog/'+id
-    console.log(link);
+    // console.log(link);
     return (
         <>
         <a href={link}>

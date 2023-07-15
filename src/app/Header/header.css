@@ -1,5 +1,14 @@
 header{
     width: 100%;
+    display: flex;
+    /* justify-content:space-between; */
+    align-items: center;
+}
+header ul{
+    display: flex;
+}
+.lines{
+    display: none;
 }
 header .title{
     
@@ -9,4 +18,48 @@ header .title{
     margin: auto;
     max-width: 85rem;
     
+}
+@media screen and (max-width:700px) {
+    
+    header{
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        margin: 0;
+        height: 10vh;
+    }
+    header ul{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 60%;
+        background-color: black;
+        /* opacity: 0; */
+        display: none;
+    }
+    header .title{
+        width: 100%;
+        border: 1px solid red;
+        margin: 0;
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .lines{
+        cursor: pointer;
+        display: block;
+        position: fixed;
+        z-index: 2;
+        top: 0rem;
+        max-height: 10vh;
+        border: 1px solid yellow;
+    }
+    .line{
+        margin: .75rem 0.25rem  ;
+        width: 4rem;
+        height: .25rem;
+        border-radius: 50rem;
+        background-color: black;
+    }
 }

@@ -1,11 +1,21 @@
 .blog-content{
-    height: 100vh;
+    height: auto;
+    width:100%;
    
 }
+.dashc .dash{
+    width: 80%;
+}
+.dashc{
+    /* border: 2px solid red; */
+    width: 33.3%;
+}
+.dashc .dash-content{
+    width: 100%;
+    /* background-color: aliceblue; */
+}
 .blogc{
-    width: 60%;
-    margin: auto;
-    /* border: 1px solid red; */
+    width: 66.6%;
 }
 .imageb{
     width: 60%;
@@ -16,4 +26,15 @@
     width: 80%;
     margin: auto;
 
+}
+@media screen and (max-width:700px){
+    .imageb {
+        width: 100%;
+    }
+    .blogc{
+    position: relative;
+
+         top: 10vh;
+
+    }
 }
