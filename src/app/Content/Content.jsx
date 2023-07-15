@@ -8,7 +8,7 @@ export default function Content ({arr}) {
         <div>
             <div className="content">
                 <Dash  />
-                <Blogs ppp='6' blogs = {array} blogz = {{array}}/>
+                <Blogs ppp='6' blogs = {array}/>
             </div>
         </div>
     )
