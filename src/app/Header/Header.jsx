@@ -5,6 +5,14 @@ import './header.css'
 export default function Header() {
     function slidetoggle (){
         document.querySelector('.dash').classList.toggle('hidden')
+        try{
+
+            document.querySelector('.dashc').classList.toggle('hd')
+            document.querySelector('.blogc').classList.toggle('focus')
+        }
+        catch{
+            console.log("not in a blog section");
+        }
     }
     function toggle (){
        

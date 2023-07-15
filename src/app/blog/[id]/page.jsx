@@ -27,7 +27,6 @@ export default function Page({ params }) {
             <Header />
             <div className="blog-content flex ">
                 <div className="dashc  top-16">
-
                     <Dash />
                 </div>
                 <div className="blogc ">

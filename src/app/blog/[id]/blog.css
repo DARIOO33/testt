@@ -1,5 +1,5 @@
 .blog-content{
-    height: auto;
+    min-height: 100vh;
     width:100%;
    
 }
@@ -10,12 +10,17 @@
     /* border: 2px solid red; */
     width: 33.3%;
 }
+.dashc.hd{
+    width: 0%;
+}
 .dashc .dash-content{
     width: 100%;
-    /* background-color: aliceblue; */
 }
 .blogc{
     width: 66.6%;
+}
+.blogc.focus{
+    margin: 2rem auto;
 }
 .imageb{
     width: 60%;
