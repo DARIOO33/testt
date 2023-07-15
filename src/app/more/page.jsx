@@ -10,7 +10,7 @@ export default function Page(params) {
         <Header/>
         <div className="containerr m-auto ">
 
-        <Blogs ppp="10"/>
+        <Blogs ppp="8"/>
         </div>
         </Main>
         </>

@@ -1,7 +1,7 @@
 .blogs{
     width: 65%;
     height: auto;
-    margin: auto;
+    margin: 0 auto ;
     /* background-color: yellow; */
 }
 
@@ -11,4 +11,12 @@
     width: 95%;
     margin: auto;
     grid-template-columns: repeat(2,2fr);
+}
+.inline-flex{
+    /* background-color: red; */
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    /* text-align: center; */
+    justify-content: space-evenly;
 }

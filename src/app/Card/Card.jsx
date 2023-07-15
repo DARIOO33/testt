@@ -13,7 +13,7 @@ export default function Card({title,details,desc,image,id}) {
           <div className="image">
           <Image
           src= {image}
-          alt="Picture of the author"
+          alt={title}
         
           
           />
