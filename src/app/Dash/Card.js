@@ -1,4 +1,5 @@
 export default function Card({number,title,category,date}) {
+    // const ch = {}
     return (
         <>
             <div className="onecat flex">

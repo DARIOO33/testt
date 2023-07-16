@@ -41,7 +41,7 @@ export default function Blogs({ ppp, blogs, blogz }) {
                 {currentPosts.map(card => {
                     return (
 
-                        <Card id={card.id} title={card.title} key={card.id} desc={card.desc} image={card.image} details={card.details} />
+                        <Card id={card.id} title={card.title} key={card.id} desc={card.desc} image={card.image} details={card.details} category={card.category} />
 
                     )
                 })}

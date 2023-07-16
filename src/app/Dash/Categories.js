@@ -1,11 +1,10 @@
 import "./Categories.css"
 export default function Categories({ title, type }) {
     const catlist = [
-        { id: 1, type: "Culture" },
-        { id: 2, type: "Creativity" },
+        { id: 1, type: "Technology" },
+        { id: 2, type: "Sport" },
         { id: 3, type: "Food" },
         { id: 4, type: "Travel" },
-        { id: 5, type: "Humor" },
         { id: 6, type: "Music" }
     ]
     return (

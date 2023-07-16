@@ -15,6 +15,7 @@ export default function Header() {
         }
     }
     function toggle (){
+        document.querySelector('header ul').classList.toggle('active')
        
 }
 
@@ -34,6 +35,7 @@ export default function Header() {
                 </div>
                 <ul className=" mr-16">
                     <li className="p-5 text-lg font-bold"><a href="/">Home</a></li>
+                    <li className="p-5 text-lg font-bold"><a href="/about">About</a></li>
                     {/* <li className="p-5 text-lg font-bold"><a href="/more">Blogs</a></li> */}
                     <li className="p-5 text-lg font-bold"><a onClick={slidetoggle} className='cursor-pointer'>Left Sliderbar</a></li>
                 </ul>

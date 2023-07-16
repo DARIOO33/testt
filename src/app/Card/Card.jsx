@@ -2,10 +2,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 // import img from '../../assets/img.jpeg'
 import './card.css'
-export default function Card({title,details,desc,image,id}) {
-    // console.log({id});
+export default function Card({title,details,desc,image,id,category}) {
+    var string = desc
+    var point = string.indexOf(".")
+    var comma = string.indexOf(",")
+    let newString;
+    newString = string.substr(0,comma)+"..."
+
     const link = 'blog/'+id
-    // console.log(link);
     return (
         <>
         <a href={link}>
@@ -19,14 +23,18 @@ export default function Card({title,details,desc,image,id}) {
           />
             </div>  
             <div className="text p-2 ">
-                <div className="details text-gray-400 text-xs ">
-                    {details}
-                </div>
+                <span className="details text-gray-400 text-xs font-semibold">
+                    {category}
+                </span>
+                 <span className='text-gray-500 text-s font-semibold ml-2'>•</span>
+                <span className='details text-gray-400 text-xs ml-2'>
+                {details}
+                </span>
                 <div className="title text-xl font-bold">
                     {title}
                 </div>
                 <div className="desc text-gray-500 text-sm">
-                    {desc}
+                    {newString}
                 </div>
             </div>
         </div>
