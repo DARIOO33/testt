@@ -7,9 +7,13 @@ export default function Search() {
             <div className="search mt-4">
                 <div className="red  h-14   sr ">
                     <input type="text" name="" id="" placeholder="Search..." className=" rounded-3xl h-12  border-none" />
+                    {/* <p onClick={window.location.href="/results"}> */}
+
                     <Image 
                     src={search} 
+                    
                     alt ="Search "/>
+                    {/* </p> */}
                 </div>
             </div>
         </>
