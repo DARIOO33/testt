@@ -34,4 +34,8 @@
         padding: 1rem;
         display: block;
     }
+    .card-container{
+    grid-template-columns: repeat(1,2fr);
+
+    }
 }

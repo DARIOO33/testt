@@ -16,7 +16,7 @@ export default function Categories({ title, type }) {
                 <ul className="mt-4">
                     {catlist.map((type => {
                         return (
-                            <li key={type.id} className="mt-2"><a href="/" className="option text-blue-950 text-xm font-semibold">{type.type}</a></li>
+                            <li key={type.id} className="mt-2"><a href={"/"+(type.type).toLowerCase()} className="option text-blue-950 text-xm font-semibold">{type.type}</a></li>
                         )
                     }))}
                 </ul>
