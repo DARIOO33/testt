@@ -15,14 +15,14 @@ export default function page() {
         { id: 3, category: "Technology", title: "WormGPT tool for criminals discovered by cybersecurity firm", desc: "A cybersecurity firm has discovered a new generative artificial intelligence tool called WormGPT , that is being sold to criminals as another firm has created a malicious generative AI tool called PoisonGPT to test how the technology can be used to intentionally spread fake news online. Photo courtesy of SlashNext", details: "NOV 17 2020", image: worm },
         { id: 4, category: "Sport", title: "Wimbledon: Marketa Vondrousova shocks Ons Jabeur to win her maiden Grand Slam", desc: 'Vondrousova climbed up the stands Pat Cash-style to hug her team in the players box, while Jabeur sat disconsolately in her chair. She said: "I dont know whats happening now. Ons, congratulations, youre such an inspiration for all of us, I hope you are going to win one day. "After everything Ive been through - I had a cast on this time last year - and now I cant believe Im holding this trophy."', details: "JULY 16 2023", image: tennis },
         { id: 5, category: "Sport", title: "Sport test", desc: "Lorem ipsum dolor sit amet consectetur,.", details: "NOV 17 2020", image: img },
-        { id: 6, category: "", title: "Title test", desc: "Lorem ipsum dolor sit amet consectetur.", details: "NOV 17 2020", image: img },
-        { id: 7, category: "", title: "Title test", desc: "Lorem ipsum dolor sit amet consectetur.", details: "NOV 17 2020", image: img },
+        { id: 6, category: "Food", title: "Food test", desc: "Lorem ipsum dolor sit amet consectetur.", details: "NOV 17 2020", image: img },
+        { id: 7, category: "Food", title: "Food test", desc: "Lorem ipsum dolor sit amet consectetur.", details: "NOV 17 2020", image: img },
         { id: 8, category: "", title: "Title test", desc: "Lorem ipsum dolor sit amet consectetur.", details: "NOV 17 2020", image: img },
         { id: 9, category: "", title: "Title test", desc: "Lorem ipsum dolor sit amet consectetur.", details: "NOV 17 2020", image: img },
         { id: 10, category: "", title: "Title test", desc: "Lorem ipsum dolor sit amet consectetur.", details: "NOV 17 2020", image: img },
 
     ]
-    const filtreArray = array.filter((element) => element.category === "Sport")
+    const filtreArray = array.filter((element) => element.category === "Food")
     return (
         <>
             <Main>
