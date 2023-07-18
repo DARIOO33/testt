@@ -12,6 +12,10 @@ import tennis from '../../assets/tennis.jpg'
 
 import img from '../../assets/img.jpeg'
 export default function page () {
+
+    
+
+  
     const array = [
         { id:1, category :"Technology" , title : "Intelligence artificielle : Google lance Bard en réponse à ChatGPT" ,  desc : "Bard est maintenant disponible dans la plupart des pays du monde et dans les langues les plus parlées », a indiqué dans un post de blog Google, qui avait présenté en février cet outil pour répondre à ChatGPT, le logiciel phare d’OpenAI financé principalement par Microsoft. « Nous avons collaboré de manière proactive avec des experts, des décideurs et des régulateurs pour mener cette expansion », a précisé Google." ,details : "13/07/2023" , image : bardimg },
         { id:2, category :"Technology" , title: "Microsoft a été piraté : des hackers chinois ont espionné les mails de plusieurs comptes Outlook", desc: "Microsoft a été victime dun piratage. En exploitant une faille dans Azure, des pirates venus de Chine sont parvenus à pénétrer au sein de plusieurs comptes Outlook. Les cybercriminels ont notamment pu espionner toutes les conversations de plusieurs agences du gouvernement américain.", details: "13/07/2023", image: microsoft },
@@ -25,37 +29,24 @@ export default function page () {
         { id:10, category :"" , title : "Title test" ,  desc : "Lorem ipsum dolor sit amet consectetur." ,details : "NOV 17 2020" , image : img },
     
     ]
-const [results, setResults] = useState(array);
-
-  const handleSearch = (searchQuery) => {
-    var input1 = document.querySelector('input');
-    
-    let filteredResults;
+    const url = window.location.href
+    const equal = url.indexOf("=")
+    const search = url.substring(equal+1,url.length)
+    console.log(search);
+    const [results, setResults] = useState(array);
+    const filtredArray=results.filter((result => {
+    return result.title.toLowerCase().includes(search.toLowerCase())
+  }))
   
-    console.log(searchQuery);
- 
-
-        filteredResults = array.filter((result) => {
-            console.log(searchQuery+'in fun');
-
-            return (result.title.toLowerCase().includes(searchQuery.toLowerCase()))
-            
-        });
-      
-    setResults(filteredResults);
-
-  
-
-  };
 
   return (
     <div>
         <Main>
             <Header/>
-            <Content arr = {results}/>
+            <Content arr = {filtredArray}/>
         </Main>
       <input
-      id="search_query"
+      id="searchquery"
         type="text"
         placeholder="Search..."
         onChange={(event) => handleSearch(event.target.value)}
