@@ -1,9 +1,12 @@
-"use client"
 import './search.css'
+
 import Image from 'next/image'
 import search from '../../assets/search.png'
 export default function Search() {
-    const url = window.location.href
+   
+
+
+    const url = "http://localhost:3000"
     const equal = url.indexOf("=")
     const searched = url.substring(equal+1,url.length)
     
