@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+// import { useState } from "react";
 import Header from '../Header/Header'
 import Main from '../main/Main'
 import Content from '../Content/Content'
@@ -33,8 +33,8 @@ export default function page () {
     const equal = url.indexOf("=")
     const search = url.substring(equal+1,url.length)
     console.log(search);
-    const [results, setResults] = useState(array);
-    const filtredArray=results.filter((result => {
+    // const [results, setResults] = useState(array);
+    const filtredArray=array.filter((result => {
     return result.title.toLowerCase().includes(search.toLowerCase())
   }))
   

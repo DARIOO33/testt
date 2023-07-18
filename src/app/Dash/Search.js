@@ -2,7 +2,6 @@
 import './search.css'
 import Image from 'next/image'
 import search from '../../assets/search.png'
-import { useState } from 'react'
 export default function Search() {
     const url = window.location.href
     const equal = url.indexOf("=")
