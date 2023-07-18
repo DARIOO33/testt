@@ -4,13 +4,22 @@ import Image from 'next/image'
 import search from '../../assets/search.png'
 import { useState } from 'react'
 export default function Search() {
-    const [searched,setSearched] = useState("")
+    const url = window.location.href
+    const equal = url.indexOf("=")
+    const searched = url.substring(equal+1,url.length)
     
     function myfunc(){
         const myinput = document.querySelector('input').value
         window.location.href = "/results?search="+myinput
     }
-    
+    try{
+        // if(equal!=-1){
+            document.querySelector('input').value=searched
+        // }
+    }
+    catch{
+        console.log("can't");
+    }
     return (
         <>
             <div className="search mt-4">
