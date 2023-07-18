@@ -21,16 +21,17 @@
     /* padding: 2rem; */
     /* display: none; */
 }
-.sr svg{
+.sr a{
     cursor: pointer;
     position: absolute;
     margin-right: 1rem;
     z-index: 9;
-    height: 1.45rem;
-    width: 1.45rem;
-    transition: .5s;
+    font-size: 1.5rem;
+    /* height: 1.45rem; */
+    /* width: 1.45rem; */
+    transition: .2s;
 }
-.sr svg:hover{
+.sr a:hover{
     transform: scale(1.3);
 }
 
