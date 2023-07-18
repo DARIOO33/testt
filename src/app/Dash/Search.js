@@ -32,7 +32,8 @@ export default function Search() {
                     <Image 
                     src={search} 
                     alt ="Search"
-                    onClick={myfunc}/>
+                    
+                    />
                     {/* </p> */}
                 </div>
             </div>
