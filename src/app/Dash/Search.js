@@ -1,5 +1,6 @@
+"use client"
 import './search.css'
-
+import Icon from './Icon.jsx'
 import Image from 'next/image'
 import search from '../../assets/search.png'
 export default function Search() {
@@ -10,10 +11,7 @@ export default function Search() {
     const equal = url.indexOf("=")
     const searched = url.substring(equal+1,url.length)
     
-    function myfunc(){
-        const myinput = document.querySelector('input').value
-        window.location.href = "/results?search="+myinput
-    }
+   
     try{
         if(equal!=-1){
             document.querySelector('input').value=searched
@@ -27,13 +25,14 @@ export default function Search() {
             <div className="search mt-4">
                 <div className="red  h-14   sr ">
                     <input type="text" name="" id="input"  placeholder="Search..." className=" rounded-3xl h-12  border-none" />
+                    <Icon />
                     {/* <p onClick={window.location.href="/results"}> */}
-
-                    <Image 
+                   
+                    {/* <Image 
                     src={search} 
                     alt ="Search"
                     
-                    />
+                    /> */}
                     {/* </p> */}
                 </div>
             </div>

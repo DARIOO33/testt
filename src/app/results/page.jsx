@@ -9,6 +9,12 @@ import Link from 'next/link'
 import Card from '../Card/Card'
 import worm from '../../assets/worm.jpg'
 import tennis from '../../assets/tennis.jpg'
+import "@fortawesome/fontawesome-svg-core/styles.css"; 
+
+import { config } from "@fortawesome/fontawesome-svg-core";
+// Tell Font Awesome to skip adding the CSS automatically 
+// since it's already imported above
+config.autoAddCss = false; 
 
 import img from '../../assets/img.jpeg'
 export default function page () {
@@ -29,7 +35,7 @@ export default function page () {
         { id:10, category :"" , title : "Title test" ,  desc : "Lorem ipsum dolor sit amet consectetur." ,details : "NOV 17 2020" , image : img },
     
     ]
-    const url = "http://localhost:3000/results?search="
+    const url = "http://localhost:3000/results?search=test"
     const equal = url.indexOf("=")
     const search = url.substring(equal+1,url.length)
     console.log(search);
