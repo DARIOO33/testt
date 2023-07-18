@@ -7,7 +7,7 @@ export default function Search() {
    
 
 
-    const url = "http://localhost:3000"
+    const url = window.location.href
     const equal = url.indexOf("=")
     const searched = url.substring(equal+1,url.length)
     

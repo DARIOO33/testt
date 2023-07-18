@@ -35,7 +35,7 @@ export default function page () {
         { id:10, category :"" , title : "Title test" ,  desc : "Lorem ipsum dolor sit amet consectetur." ,details : "NOV 17 2020" , image : img },
     
     ]
-    const url = "http://localhost:3000/results?search=test"
+    const url = window.location.href
     const equal = url.indexOf("=")
     const search = url.substring(equal+1,url.length)
     console.log(search);
