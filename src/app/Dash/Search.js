@@ -13,9 +13,9 @@ export default function Search() {
         window.location.href = "/results?search="+myinput
     }
     try{
-        // if(equal!=-1){
+        if(equal!=-1){
             document.querySelector('input').value=searched
-        // }
+        }
     }
     catch{
         console.log("can't");
