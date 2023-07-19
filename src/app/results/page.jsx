@@ -1,4 +1,6 @@
 "use client"
+import { useRouter } from 'next/router';
+
 // import { useState } from "react";
 import Header from '../Header/Header'
 import Main from '../main/Main'
@@ -20,7 +22,6 @@ import img from '../../assets/img.jpeg'
 export default function page () {
 
     
-
   
     const array = [
         { id:1, category :"Technology" , title : "Intelligence artificielle : Google lance Bard en réponse à ChatGPT" ,  desc : "Bard est maintenant disponible dans la plupart des pays du monde et dans les langues les plus parlées », a indiqué dans un post de blog Google, qui avait présenté en février cet outil pour répondre à ChatGPT, le logiciel phare d’OpenAI financé principalement par Microsoft. « Nous avons collaboré de manière proactive avec des experts, des décideurs et des régulateurs pour mener cette expansion », a précisé Google." ,details : "13/07/2023" , image : bardimg },
