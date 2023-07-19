@@ -7,9 +7,7 @@ import {
 export default function Icon() {
 
     function myfunc(){
-        const myinput = document.querySelector('input').value
-        console.log(myinput);
-        window.location.href = "/results?search="+myinput
+        console.log("done");
     }
     return (
         <a onClick={myfunc}>

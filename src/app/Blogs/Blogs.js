@@ -9,22 +9,19 @@ import Card from '../Card/Card'
 import img from '../../assets/img.jpeg'
 export default function Blogs({ ppp, blogs, blogz }) {
 
-    const array = blogs.arr
+    const array = blogs
 
     const [currentPage, setCurrentPage] = useState(1)
     const [postsPerPage, setPostsPerPage] = useState((ppp))
     const lasPostIndex = currentPage * postsPerPage
     const firtsPostIndex = lasPostIndex - postsPerPage
     const currentPosts = array.slice(firtsPostIndex, lasPostIndex)
+    
     function nextPage() {
         window.scrollTo(0, 0);
-        // console.log(currentPage);
-
         setCurrentPage(currentPage + 1)
     }
     function prevPage() {
-        window.scrollTo(0, 0);
-        // console.log(currentPage);
         if (currentPage > 1) {
             setCurrentPage(currentPage - 1)
         }
