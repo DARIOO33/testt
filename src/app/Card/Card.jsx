@@ -12,7 +12,7 @@ export default function Card({title,details,desc,image,id,category}) {
     const link = 'blog/'+id
     return (
         <>
-        <a href={link}>
+        <Link href={link}>
         <div className="card mt-4">
           <div className="image">
           <Image
@@ -38,7 +38,7 @@ export default function Card({title,details,desc,image,id,category}) {
                 </div>
             </div>
         </div>
-        </a>
+        </Link>
         </>
 
     )

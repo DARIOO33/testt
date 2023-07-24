@@ -1,5 +1,5 @@
 "use client"
-import { Link } from 'next/link';
+import Link  from 'next/link';
 
 import './header.css'
 export default function Header() {
@@ -34,8 +34,8 @@ export default function Header() {
                     My-Blog
                 </div>
                 <ul className=" mr-16">
-                    <li className="p-5 text-lg font-bold"><a href="/">Home</a></li>
-                    <li className="p-5 text-lg font-bold"><a href="/about">About</a></li>
+                    <li className="p-5 text-lg font-bold"><Link href="/">Home</Link></li>
+                    <li className="p-5 text-lg font-bold"><Link href="/about">About</Link></li>
                     {/* <li className="p-5 text-lg font-bold"><a href="/more">Blogs</a></li> */}
                     <li className="p-5 text-lg font-bold"><a onClick={slidetoggle} className='cursor-pointer'>Left Sliderbar</a></li>
                 </ul>
